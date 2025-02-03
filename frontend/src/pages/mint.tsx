@@ -7,6 +7,8 @@ import { parseEther } from 'viem';
 
 // TODO: Replace with your deployed contract address. This is a sample address for the SimpleNFT contract.
 const NFT_CONTRACT_ADDRESS = "0x488b34f16720dc659a1bb9f3bf34a1e47734df61";
+// Sample NFT image URL - replace with your actual NFT preview image
+const NFT_PREVIEW_URL = "https://ipfs.io/ipfs/QmYDvPAXtiJg7s8JdRBSLWdgSphQdac8j1YuQNNxcGE1hg/1.png";
 
 const MintPage: NextPage = () => {
   const chainId = useChainId();
@@ -54,6 +56,25 @@ const MintPage: NextPage = () => {
     marginTop: '20px',
   };
 
+  const secondaryButtonStyle = {
+    ...buttonStyle,
+    backgroundColor: '#4CAF50',
+    marginLeft: '10px',
+  };
+
+  const previewStyle = {
+    width: '300px',
+    height: '300px',
+    borderRadius: '12px',
+    marginBottom: '20px',
+    objectFit: 'cover' as const,
+    border: '1px solid #eaeaea',
+  };
+
+  const viewOnOpenSea = () => {
+    window.open(`https://testnets.opensea.io/assets/sepolia/${NFT_CONTRACT_ADDRESS}`, '_blank');
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -71,16 +92,30 @@ const MintPage: NextPage = () => {
 
         <div className={styles.grid}>
           <div className={styles.card}>
+            <img 
+              src={NFT_PREVIEW_URL}
+              alt="NFT Preview"
+              style={previewStyle}
+            />
             <h2>SimpleNFT Collection</h2>
             <p>Mint Price: 0.01 ETH</p>
             
-            <button
-              onClick={handleMint}
-              disabled={isConfirming}
-              style={buttonStyle}
-            >
-              {isConfirming ? 'Minting...' : 'Mint NFT'}
-            </button>
+            <div style={{ display: 'flex', gap: '10px' }}>
+              <button
+                onClick={handleMint}
+                disabled={isConfirming}
+                style={buttonStyle}
+              >
+                {isConfirming ? 'Minting...' : 'Mint NFT'}
+              </button>
+
+              <button
+                onClick={viewOnOpenSea}
+                style={secondaryButtonStyle}
+              >
+                View on OpenSea
+              </button>
+            </div>
 
             {writeError && (
               <div style={{ marginTop: '16px', color: 'red' }}>
@@ -91,13 +126,23 @@ const MintPage: NextPage = () => {
             {isConfirmed && (
               <div style={{ marginTop: '16px', color: 'green' }}>
                 Successfully minted your NFT!
-                <div>
+                <div style={{ display: 'flex', gap: '10px', marginTop: '10px' }}>
                   <a
                     href={`https://sepolia.etherscan.io/tx/${hash}`}
                     target="_blank"
                     rel="noopener noreferrer"
+                    style={{ color: '#0d76fc' }}
                   >
                     View on Etherscan
+                  </a>
+                  <span>|</span>
+                  <a
+                    href={`https://testnets.opensea.io/assets/sepolia/${NFT_CONTRACT_ADDRESS}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: '#0d76fc' }}
+                  >
+                    View on OpenSea
                   </a>
                 </div>
               </div>

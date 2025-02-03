@@ -5,16 +5,17 @@ This project is a comprehensive Web3 application built for the TreeHacks Web3 Wo
 ## Project Overview
 
 The DApp consists of two main components:
-- A frontend application for ETH transfers and wallet connection
-- Smart contracts including a basic Lock contract and an NFT contract
+- A frontend application for ETH transfers and NFT minting
+- Smart contracts including a basic ERC721 NFT deployer contract
 
 ### Features
 
 - Wallet connection using RainbowKit
 - ETH transfer functionality on Sepolia testnet
+- NFT minting capability
 - Transaction status tracking
 - Etherscan transaction verification
-- Simple NFT minting contract
+- Smart contract testing with Hardhat
 
 ## Project Structure
 ```
@@ -46,6 +47,11 @@ treehacks-dapp/
 - [OpenZeppelin](https://openzeppelin.com) - Smart contract libraries
 
 ## Getting Started
+
+### Prerequisites
+- Node.js 18+ installed
+- MetaMask or another Web3 wallet with Sepolia testnet access where you have access to a private key
+- Some Sepolia testnet ETH (get from [Sepolia Faucet](https://sepoliafaucet.com))
 
 1. Clone this repository
 

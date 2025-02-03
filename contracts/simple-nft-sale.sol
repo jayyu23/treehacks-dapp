@@ -11,7 +11,11 @@ contract SimpleNFT is ERC721, Ownable {
     string private baseURI;
 
     constructor() ERC721("SimpleNFT", "SNFT") Ownable(msg.sender) {
-        // Sample URI for Azuki. You should change this to your own NFT metadata
+        // Sample baseURI for Azuki. You should change this to your own NFT metadata
+        // The JSON file should be in the same format as the Azuki example. For each NFT ID,
+        // the JSON file should be named like `1.json` and stored in the same IPFS folder as the image.
+        // If you don't want to use IPFS, you can just use a regular HTTP URL.
+        // IPFS stands for InterPlanetary File System. More info here: https://ipfs.io/
         baseURI = "ipfs://QmZcH4YvBVVRJtdn4RdbaqgspFU8gH6P9vomDpBVpAL3u4/";
     }
 
