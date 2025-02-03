@@ -14,15 +14,12 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "viem": "2.21.55",
-    "wagmi": "^2.14.9",
-    "@openzeppelin/contracts": "^5.2.0"
+    "wagmi": "^2.14.9"
   },
   "devDependencies": {
     "@types/node": "^20.14.8",
     "@types/react": "^19.0.6",
     "typescript": "5.5.2",
-    "dotenv": "^16.0.3",
-    "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
-    "hardhat": "^2.22.18"
+    "dotenv": "^16.0.3"
   }
 }
