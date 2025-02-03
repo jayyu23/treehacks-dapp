@@ -70,7 +70,7 @@ const config = {
 
 1. Run the deploy script:
 ```bash
-npx hardhat deploy --network sepolia
+npx hardhat run scripts/deploy.ts --network sepolia
 ```
 
 2. Save the deployed contract address - you'll need it for your frontend.
@@ -80,7 +80,17 @@ npx hardhat deploy --network sepolia
 
 ## Frontend Integration
 
-1. Update your contract address in the frontend.
+1. Update your contract address in the frontend. In our case, we're using the `frontend/src/pages/mint.tsx` file.
+
+2. Make sure you have the correct ABI for the contract. The ABI is a JSON representation of your contract's interface that tells your frontend how to interact with the deployed contract. After compiling with Hardhat, you can find the ABI in `artifacts/contracts/YourContract.sol/YourContract.json`. You can copy this file to your frontend or import it directly. The ABI includes all public functions, events, and their parameters that your contract exposes.
+
+For example, after running `npx hardhat compile`, you'll find your SimpleNFT contract's ABI at:
+```
+artifacts/contracts/SimpleNFT.sol/SimpleNFT.json
+```
+
+You can copy this file to your frontend or import it directly. We've already manually added the ABI to the `mint.tsx` file.
+
 
 ## Testing on Sepolia
 

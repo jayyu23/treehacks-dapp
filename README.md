@@ -29,6 +29,7 @@ treehacks-dapp/
 ├── contracts/ # Solidity smart contracts
 │ ├── Lock.sol # Basic lock contract
 │ └── simple-nft-sale.sol # NFT contract
+├── scripts/ # Contract deployment scripts
 ├── test/ # Contract test files
 ├── ignition/ # Hardhat Ignition deployment modules
 └── hardhat.config.ts # Hardhat configuration
