@@ -1,8 +1,32 @@
-This is a [RainbowKit](https://rainbowkit.com) + [wagmi](https://wagmi.sh) + [Next.js](https://nextjs.org/) project bootstrapped with [`create-rainbowkit`](/packages/create-rainbowkit).
+# TreeHacks Web3 Workshop DApp
+
+This is a simple Ethereum transfer application built for the TreeHacks Web3 Workshop. The project demonstrates how to build a basic decentralized application using modern Web3 tools and frameworks.
+
+## Tech Stack
+
+- [RainbowKit](https://rainbowkit.com) - For wallet connection and management
+- [wagmi](https://wagmi.sh) - For Ethereum interactions
+- [Next.js](https://nextjs.org/) - React framework for the frontend
+- [Viem](https://viem.sh) - Ethereum interaction utilities
+
+Project bootstrapped with [`create-rainbowkit`](/packages/create-rainbowkit).
+
+## Features
+
+- Wallet connection using RainbowKit
+- ETH transfer functionality on Sepolia testnet
+- Transaction status tracking
+- Etherscan transaction verification
 
 ## Getting Started
 
-First, run the development server:
+1. Clone this repository
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
@@ -10,20 +34,19 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file. If you want to deploy this app, you can use Vercel.
 
-## Learn More
+To learn more about the technologies used in this workshop:
 
-To learn more about this stack, take a look at the following resources:
+- [RainbowKit Documentation](https://rainbowkit.com) - Learn about wallet connection customization
+- [wagmi Documentation](https://wagmi.sh) - Explore Ethereum interaction hooks
+- [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features
+- [Sepolia Faucet](https://sepoliafaucet.com) - Get testnet ETH for development
 
-- [RainbowKit Documentation](https://rainbowkit.com) - Learn how to customize your wallet connection flow.
-- [wagmi Documentation](https://wagmi.sh) - Learn how to interact with Ethereum.
-- [Next.js Documentation](https://nextjs.org/docs) - Learn how to build a Next.js application.
+## Contributing
 
-You can check out [the RainbowKit GitHub repository](https://github.com/rainbow-me/rainbowkit) - your feedback and contributions are welcome!
+This is a workshop demonstration project. Feel free to fork and modify for your own learning purposes!
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+MIT
