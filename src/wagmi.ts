@@ -3,20 +3,17 @@ import {
   arbitrum,
   base,
   mainnet,
-  optimism,
-  polygon,
   sepolia,
 } from 'wagmi/chains';
 
 export const config = getDefaultConfig({
-  appName: 'RainbowKit App',
+  appName: 'TreeHacks DApp',
   projectId: 'YOUR_PROJECT_ID',
   chains: [
+    sepolia,
     mainnet,
-    polygon,
-    optimism,
-    arbitrum,
     base,
+    arbitrum,
     ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true' ? [sepolia] : []),
   ],
   ssr: true,
