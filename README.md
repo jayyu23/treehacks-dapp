@@ -4,9 +4,13 @@ This project is a comprehensive Web3 application built for the TreeHacks Web3 Wo
 
 ## Project Overview
 
+![DApp Overview](./docs/img/mint.png)
+
 The DApp consists of two main components:
 - A frontend application for ETH transfers and NFT minting
 - Smart contracts including a basic ERC721 NFT deployer contract
+
+
 
 ### Features
 
