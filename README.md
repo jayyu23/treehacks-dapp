@@ -24,31 +24,39 @@ The DApp consists of two main components:
 ## Project Structure
 ```
 treehacks-dapp/
-├── frontend/ # Next.js frontend application
-│ ├── src/
-│ │ ├── components/ # React components
-│ │ ├── pages/ # Next.js pages
-│ │ ├── styles/ # CSS modules
-│ │ └── wagmi.ts # Wagmi configuration
-│ └── package.json
-├── contracts/ # Solidity smart contracts
-│ ├── Lock.sol # Basic lock contract
-│ └── simple-nft-sale.sol # NFT contract
-├── scripts/ # Contract deployment scripts
-├── test/ # Contract test files
-├── ignition/ # Hardhat Ignition deployment modules
-└── hardhat.config.ts # Hardhat configuration
+├── backend/ # Smart contract & deployment code
+| |
+│ ├── contracts/ # Solidity smart contracts
+│ │ ├── Lock.sol # Basic lock contract
+│ │ └── SimpleNFTSale.sol # NFT contract
+│ ├── scripts/ # Contract deployment scripts
+│ ├── test/ # Contract test files
+│ ├── ignition/ # Hardhat Ignition deployment modules
+│ ├── hardhat.config.ts # Hardhat configuration
+│ └── package.json # Backend dependencies
+|
+└── frontend/ # Next.js frontend application
+    ├── src/
+    │ ├── components/ # React components
+    │ ├── pages/ # Next.js pages
+    │ ├── styles/ # CSS modules
+    │ └── wagmi.ts # Wagmi configuration
+    └── package.json # Frontend dependencies
 ```
 
 
 ## Tech Stack
 
-- [RainbowKit](https://rainbowkit.com) - Wallet connection and management
-- [wagmi](https://wagmi.sh) - Ethereum interactions
-- [Next.js](https://nextjs.org/) - React framework
-- [Viem](https://viem.sh) - Ethereum utilities
-- [Hardhat](https://hardhat.org) - Smart contract development
-- [OpenZeppelin](https://openzeppelin.com) - Smart contract libraries
+- **TypeScript Frontend**
+  - [Next.js](https://nextjs.org/) - React framework
+  - [RainbowKit](https://rainbowkit.com) - Wallet connection
+  - [wagmi](https://wagmi.sh) - Ethereum hooks
+  - [Viem](https://viem.sh) - Ethereum utilities
+
+- **Smart Contract Backend**
+  - [Hardhat](https://hardhat.org) - Development environment
+  - [OpenZeppelin](https://openzeppelin.com) - Contract libraries
+  - [Ethers.js](https://docs.ethers.org) - Ethereum library
 
 ## Getting Started
 
@@ -61,8 +69,8 @@ treehacks-dapp/
 
 2. Install dependencies in both root and frontend directories:
 ```bash
-npm install
 cd frontend && npm install
+cd backend && npm install
 ```
 
 3. Run the frontend:
