@@ -108,6 +108,7 @@ Example of tests in the `test/SimpleNFT.ts` file:
 
 To run the tests:
 ```bash
-npx hardhat test --network localhost
+npx hardhat test
 ```
 
+Now that we know how to compile, test and deploy our contracts, we can move on to deploying our contracts to both the Hardhat local network and to the public Ethereum Sepolia testnet in Part 4: [Deploying Contracts](4-deploying-contracts.md).
