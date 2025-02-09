@@ -1,25 +1,65 @@
-# TreeHacks Web3 Workshop DApp
+# TreeHouse SDK
 
-This project is a comprehensive Web3 application built for the TreeHacks Web3 Workshop. It demonstrates how to build a decentralized application using modern Web3 tools and frameworks, featuring both frontend and smart contract development.
+By Jay Yu and Josh Koo
+
+A framework for one-click deployment of Web3 applications on Ethereum. Built for the TreeHacks Web3 Workshop.
 
 ## Project Overview
 
 ![DApp Overview](./docs/img/mint.png)
 
-The DApp consists of two main components:
-- A frontend application for ETH transfers and NFT minting
-- Smart contracts including a basic ERC721 NFT deployer contract
+The DApp SDK consists of two main components:
+- A frontend application for ETH transfers and NFT minting, built with Next.js, Wagmi, and RainbowKit to interact with the smart contracts
+- Backend smart contracts using Hardhat, including a basic ERC721 NFT deployer contract, and the default Hardhat Lock contract
 
 
+## Quick Start
+
+### Prerequisites
+- Node.js 18+ installed (Suggested `nvm use 20`)
+- MetaMask or another Web3 wallet with Sepolia testnet access where you have access to a private key
+- Some Sepolia testnet ETH from a faucet, such as Google Cloud's [Sepolia Faucet](https://cloud.google.com/application/web3/faucet/ethereum/sepolia)
+
+
+1. Clone this repository
+```bash
+git clone https://github.com/Stanford-Blockchain-Club/treehouse-sdk
+```
+
+2. Install dependencies in both backend and frontend directories:
+```bash
+cd backend && npm install
+cd ../frontend && npm install
+```
+
+3. Run the frontend on `localhost:3000`:
+```bash
+npm run dev
+```
 
 ### Features
 
-- Wallet connection using RainbowKit
-- ETH transfer functionality on Sepolia testnet
-- NFT minting capability
-- Transaction status tracking
-- Etherscan transaction verification
-- Smart contract testing with Hardhat
+The deployed application (accessible at `localhost:3000`) has several basic features of a web3 application:
+1. Wallet connection using RainbowKit, that automatically connects to the Ethereum Sepolia testnet (supporting MetaMask, Coinbase etc.)
+2. ETH transfer functionality on Ethereum's Sepolia testnet by entering an address and amount. This will ask the user to confirm a simple transaction in their wallet.
+3. NFT minting capability, interacting with a Sepolia-deployed ERC721 contract (`simple-nft-sale.sol`). This NFT contract clones Azuki's metadata format, and is viewable on Opensea.
+
+Surprisingly, even for such a seemingly trivial web3 application, you need a whole lot of infrastructure to get it working, including:
+- Next.js frontend
+- Wagmi to interact with the Ethereum blockchain
+- RainbowKit to connect wallets
+- Hardhat to deploy and test smart contracts
+- Sepolia testnet RPC URL from Infura or Alchemy to connect to the Ethereum network
+- Sepolia ETH to pay for gas fees
+
+## How does it work?
+
+See documentation and guides in the `docs` folder:
+- Part 1: [Anatomy of an Ethereum DApp](docs/1-intro.md)
+- Part 2: [Frontend TypeScript Stack](docs/2-frontend.md)
+- Part 3: [Backend Smart Contract Stack](docs/3-backend.md)
+- Part 4: [Deploying Smart Contracts (Local and Sepolia Testnet)](docs/4-testnet.md)
+
 
 ## Project Structure
 ```
@@ -45,7 +85,7 @@ treehacks-dapp/
 ```
 
 
-## Tech Stack
+## Further Reading
 
 - **TypeScript Frontend**
   - [Next.js](https://nextjs.org/) - React framework
@@ -57,28 +97,6 @@ treehacks-dapp/
   - [Hardhat](https://hardhat.org) - Development environment
   - [OpenZeppelin](https://openzeppelin.com) - Contract libraries
   - [Ethers.js](https://docs.ethers.org) - Ethereum library
-
-## Getting Started
-
-### Prerequisites
-- Node.js 18+ installed
-- MetaMask or another Web3 wallet with Sepolia testnet access where you have access to a private key
-- Some Sepolia testnet ETH (get from [Sepolia Faucet](https://sepoliafaucet.com))
-
-1. Clone this repository
-
-2. Install dependencies in both root and frontend directories:
-```bash
-cd frontend && npm install
-cd backend && npm install
-```
-
-3. Run the frontend:
-```bash
-cd frontend && npm run dev
-```
-
-4. Connect your wallet and start interacting with the DApp!
 
 ## Smart Contract Development
 For detailed instructions on local development and testing with Hardhat, see our [Hardhat Guide](docs/HARDHAT.md). This guide covers:
