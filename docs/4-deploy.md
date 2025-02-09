@@ -127,10 +127,10 @@ After successful deployment:
 - Document deployed addresses
 - Test full application flow
 
-Part 1: [Anatomy of an Ethereum DApp](docs/1-intro.md)
+Part 1: [Anatomy of an Ethereum DApp](1-intro.md)
 
-Part 2: [Frontend TypeScript Stack](docs/2-frontend.md)
+Part 2: [Frontend TypeScript Stack](2-frontend.md)
 
-Part 3: [Backend Smart Contract Stack](docs/3-backend.md)
+Part 3: [Backend Smart Contract Stack](3-backend.md)
 
-Part 5: [NFT Metadata and Standards](docs/5-nft-metadata.md)
+Part 5: [NFT Metadata and Standards](5-nft-metadata.md)

@@ -111,4 +111,4 @@ To run the tests:
 npx hardhat test
 ```
 
-Now that we know how to compile, test and deploy our contracts, we can move on to deploying our contracts to both the Hardhat local network and to the public Ethereum Sepolia testnet in Part 4: [Deploying Contracts](4-deploying-contracts.md).
+Now that we know how to compile, test and deploy our contracts, we can move on to deploying our contracts to both the Hardhat local network and to the public Ethereum Sepolia testnet in Part 4: [Deploying Contracts](4-deploy.md).
