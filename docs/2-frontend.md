@@ -86,7 +86,6 @@ Another example is in `src/pages/mint.tsx`, where we use Wagmi to mint an NFT:
 
 ```tsx
 // import { useWriteContract, useWaitForTransactionReceipt, useChainId } from 'wagmi';
-// TODO: Replace with your deployed contract address. This is a sample address for the SimpleNFT contract.
 
   const { data: hash, writeContract, error: writeError } = useWriteContract();
   
@@ -126,6 +125,7 @@ This second example is more complex, as it involves writing to a smart contract.
 
 The smart contract address that we are actually interacting with:
 ```tsx
+// TODO: Replace with your deployed contract address. This is a sample address for the SimpleNFT contract.
 const NFT_CONTRACT_ADDRESS = "0x488b34f16720dc659a1bb9f3bf34a1e47734df61";
 ```
 
