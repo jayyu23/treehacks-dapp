@@ -40,6 +40,12 @@ cd ../frontend && npm install
 ```bash
 npm run dev
 ```
+You can see the frontend by going to `localhost:3000` in your browser.
+
+4. Test the backend smart contracts in a seperate terminal:
+```bash
+cd backend && npx hardhat test
+```
 
 ### Features
 
@@ -103,13 +109,12 @@ treehacks-dapp/
   - [OpenZeppelin](https://openzeppelin.com) - Contract libraries
   - [Ethers.js](https://docs.ethers.org) - Ethereum library
 
-## Smart Contract Development
-For detailed instructions on local development and testing with Hardhat, see our [Hardhat Guide](docs/HARDHAT.md). This guide covers:
-- Setting up a local blockchain
-- Deploying contracts locally
-- Running tests
-- Connecting your wallet to the local network
-- For deploying to Sepolia testnet, see our [Testnet Deployment Guide](docs/TESTNET.md)
+Suggested Exercises:
+1. Modify the NFT contract to add your own features
+2. Create a new page in the frontend
+3. Add a new smart contract function
+4. Customize the UI design
+
 
 ## Contributing
 
