@@ -146,7 +146,7 @@ const Home: NextPage = () => {
           rel="noopener noreferrer"
           target="_blank"
         >
-          Made with ❤️ by your frens at 🌈
+          Made with ❤️ by your frens at Stanford Blockchain Club
         </a>
       </footer>
     </div>

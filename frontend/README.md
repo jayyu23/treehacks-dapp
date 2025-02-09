@@ -1,4 +1,4 @@
-# TreeHacks Web3 Workshop DApp
+# TreeHouse SDK Frontend
 
 This is a simple Ethereum transfer application built for the TreeHacks Web3 Workshop. The project demonstrates how to build a basic decentralized application using modern Web3 tools and frameworks.
 
@@ -42,11 +42,3 @@ To learn more about the technologies used in this workshop:
 - [wagmi Documentation](https://wagmi.sh) - Explore Ethereum interaction hooks
 - [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features
 - [Sepolia Faucet](https://sepoliafaucet.com) - Get testnet ETH for development
-
-## Contributing
-
-This is a workshop demonstration project. Feel free to fork and modify for your own learning purposes!
-
-## License
-
-MIT

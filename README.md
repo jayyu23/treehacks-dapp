@@ -58,7 +58,7 @@ See documentation and guides in the `docs` folder:
 - Part 1: [Anatomy of an Ethereum DApp](docs/1-intro.md)
 - Part 2: [Frontend TypeScript Stack](docs/2-frontend.md)
 - Part 3: [Backend Smart Contract Stack](docs/3-backend.md)
-- Part 4: [Deploying Smart Contracts (Local and Sepolia Testnet)](docs/4-testnet.md)
+- Part 4: [Deploying Smart Contracts (Local and Sepolia Testnet)](docs/4-deploy.md)
 
 
 ## Project Structure
