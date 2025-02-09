@@ -136,9 +136,10 @@ The ABI of a contract is like a "function signature" that tells our frontend how
 - Try to modify the frontend and add a page - it doesn't have to interact with the smart contracts
 - Explore the Wagmi, Viem, andRainbowKit documentation to learn more about how to use these libraries to interact with smart contracts and wallets
 
-Part 1: [Anatomy of an Ethereum DApp](docs/1-intro.md)
-Part 3: [Backend Smart Contract Stack](docs/3-backend.md)
+Part 1: [Anatomy of an Ethereum DApp](1-intro.md)
 
-Part 4: [Deploying Smart Contracts (Local and Sepolia Testnet)](docs/4-deploy.md)
+Part 3: [Backend Smart Contract Stack](3-backend.md)
 
-Part 5: [NFT Metadata and Standards](docs/5-nft-metadata.md)
+Part 4: [Deploying Smart Contracts (Local and Sepolia Testnet)](4-deploy.md)
+
+Part 5: [NFT Metadata and Standards](5-nft-metadata.md)

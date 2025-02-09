@@ -146,10 +146,10 @@ const viewOnOpenSea = () => {
 - Try using a different base URI pattern for your NFTs. You can just use a regular HTTPS URL with JSONs stored on a centralized server
 - Try out IPFS, Arweave, or other decentralized storage solutions to see how they work
 
-Part 1: [Anatomy of an Ethereum DApp](docs/1-intro.md)
+Part 1: [Anatomy of an Ethereum DApp](1-intro.md)
 
-Part 2: [Frontend TypeScript Stack](docs/2-frontend.md)
+Part 2: [Frontend TypeScript Stack](2-frontend.md)
 
-Part 3: [Backend Smart Contract Stack](docs/3-backend.md)
+Part 3: [Backend Smart Contract Stack](3-backend.md)
 
-Part 4: [Deploying Smart Contracts (Local and Sepolia Testnet)](docs/4-deploy.md)
+Part 4: [Deploying Smart Contracts (Local and Sepolia Testnet)](4-deploy.md)
