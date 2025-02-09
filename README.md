@@ -17,7 +17,7 @@ The DApp SDK consists of two main components:
 
 ### Prerequisites
 - Node.js 18+ installed (Suggested `nvm use 20`)
-- MetaMask or another Web3 wallet with Sepolia testnet access where you have access to a private key
+- MetaMask or another Web3 wallet with Sepolia testnet access where you have access to a private key. You can download MetaMask as a Chrome extension [here](https://metamask.io/download/).
 - Some Sepolia testnet ETH from a faucet, such as Google Cloud's [Sepolia Faucet](https://cloud.google.com/application/web3/faucet/ethereum/sepolia)
 
 
