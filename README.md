@@ -12,14 +12,18 @@ The DApp SDK consists of two main components:
 - A frontend application for ETH transfers and NFT minting, built with Next.js, Wagmi, and RainbowKit to interact with the smart contracts
 - Backend smart contracts using Hardhat, including a basic ERC721 NFT deployer contract, and the default Hardhat Lock contract
 
-
-## Quick Start
-
-### Prerequisites
-- Node.js 18+ installed (Suggested `nvm use 20`)
-- MetaMask or another Web3 wallet with Sepolia testnet access where you have access to a private key. You can download MetaMask as a Chrome extension [here](https://metamask.io/download/).
+## Prerequisites
+- Node.js 18+ installed (Suggested `nvm use 20`).
+  - We recommend using Node Version Manager [nvm](https://github.com/nvm-sh/nvm) to manage your Node.js versions.
+  - You can install nvm via:
+  `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash`.
+  - Once you have `nvm` installed, you can run `nvm install 20` to install Node.js 20.
+- MetaMask or another Web3 wallet with Sepolia testnet access where you have access to a private key (we need this in Part 4).
+  - You can download MetaMask as a Chrome extension [here](https://metamask.io/download/).
 - Some Sepolia testnet ETH from a faucet, such as Google Cloud's [Sepolia Faucet](https://cloud.google.com/application/web3/faucet/ethereum/sepolia)
 
+
+## Quick Start
 
 1. Clone this repository
 ```bash
@@ -42,7 +46,7 @@ npm run dev
 The deployed application (accessible at `localhost:3000`) has several basic features of a web3 application:
 1. Wallet connection using RainbowKit, that automatically connects to the Ethereum Sepolia testnet (supporting MetaMask, Coinbase etc.)
 2. ETH transfer functionality on Ethereum's Sepolia testnet by entering an address and amount. This will ask the user to confirm a simple transaction in their wallet.
-3. NFT minting capability, interacting with a Sepolia-deployed ERC721 contract (`simple-nft-sale.sol`). This NFT contract clones Azuki's metadata format, and is viewable on Opensea.
+3. NFT minting capability, interacting with a Sepolia-deployed ERC721 contract (`SimpleNFT.sol`). This NFT contract clones Azuki's metadata format, and is viewable on Opensea.
 
 Surprisingly, even for such a seemingly trivial web3 application, you need a whole lot of infrastructure to get it working, including:
 - Next.js frontend
@@ -59,6 +63,7 @@ See documentation and guides in the `docs` folder:
 - Part 2: [Frontend TypeScript Stack](docs/2-frontend.md)
 - Part 3: [Backend Smart Contract Stack](docs/3-backend.md)
 - Part 4: [Deploying Smart Contracts (Local and Sepolia Testnet)](docs/4-deploy.md)
+- Part 5: [NFT Metadata and Standards](docs/5-nft-metadata.md)
 
 
 ## Project Structure

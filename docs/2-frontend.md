@@ -130,3 +130,15 @@ const NFT_CONTRACT_ADDRESS = "0x488b34f16720dc659a1bb9f3bf34a1e47734df61";
 ```
 
 The ABI of a contract is like a "function signature" that tells our frontend how to call contract methods. Whenever we compile the smart contract in the backend (covered in Part 3), we will get the corresponding ABI that we can copy over and use in our frontend.
+
+## Next Steps
+- Play around with the frontend and see how it works
+- Try to modify the frontend and add a page - it doesn't have to interact with the smart contracts
+- Explore the Wagmi, Viem, andRainbowKit documentation to learn more about how to use these libraries to interact with smart contracts and wallets
+
+Part 1: [Anatomy of an Ethereum DApp](docs/1-intro.md)
+Part 3: [Backend Smart Contract Stack](docs/3-backend.md)
+
+Part 4: [Deploying Smart Contracts (Local and Sepolia Testnet)](docs/4-deploy.md)
+
+Part 5: [NFT Metadata and Standards](docs/5-nft-metadata.md)

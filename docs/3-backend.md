@@ -33,7 +33,7 @@ The EVM (Ethereum Virtual Machine) is not limited to just Ethereum. Many other b
 - Base
 - And many others
 
-This means that smart contracts written in Solidity can be deployed to any of these networks with minimal changes. An example of a smart contract is the `SimpleNFT` contract in the `contracts/simple-nft-sale.sol` file.
+This means that smart contracts written in Solidity can be deployed to any of these networks with minimal changes. An example of a smart contract is the `SimpleNFT` contract in the `contracts/SimpleNFT.sol` file.
 
 This is a simple NFT contract that allows users to mint NFTs for a fixed price. It uses the ERC721 standard for NFTs, implementing the OpenZeppelin ERC721 library.
 
