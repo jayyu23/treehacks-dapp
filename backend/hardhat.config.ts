@@ -7,7 +7,7 @@ require("dotenv").config();
 const config: HardhatUserConfig = {
   solidity: "0.8.28",
   networks: {
-    // Uncomment this to use the sepolia network. Remember to use a .env file with the correct RPC URL and PRIVATE_KEY.
+    // // Uncomment this to use the sepolia network. Remember to use a .env file with the correct RPC URL and PRIVATE_KEY.
     // sepolia: {
     //   url: process.env.SEPOLIA_RPC_URL,
     //   accounts: [process.env.PRIVATE_KEY]
