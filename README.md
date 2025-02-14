@@ -2,7 +2,7 @@
 
 By Jay Yu and Josh Koo
 
-A framework for one-click deployment of Web3 applications on Ethereum. Built for the TreeHacks Web3 Workshop.
+A framework for one-click deployment of Web3 applications on Ethereum. Built for the TreeHacks Web3 Workshop!
 
 ## Project Overview
 
